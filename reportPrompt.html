@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Cop</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <h2>Copy báo cáo</h2>
+      <div class="input-box">
+        <label for="seat">Done:</label>
+      <input type="text" id="done" name="done" />
+        <label for="user">Bypass:</label>
+      <input type="text" id="bypass" name="bypass" />
+      <label for="seat">Đang liên hệ:</label>
+      <input type="text" id="contacting" name="contacting" />
+      <label for="seat">Khó khăn:</label>
+      <input type="text" id="difficulty" name="difficulty" />
+      </div>
+
+
+      <button onclick="generateMessage()">Generate báo cáo</button>
+      <button  class="copy-button" onclick="copyToClipboard()">Copy báo cáo</button>
+      <button  class="delete-button" type="button" onclick="resetForm()">Xóa hết</button>
+
+      <h3>Báo cáo:</h3>
+      <textarea id="output" rows="6" cols="80" readonly></textarea>
+
+      <div id="autoAlert"></div>
+      <div class="back-button">
+            <button onclick="window.location.href='/home.html'"">Quay lại</button>
+        </div>
+    </div>
+     <script src="report.js"></script>
+
+  </body>
+</html>
