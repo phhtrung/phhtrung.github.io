@@ -36,3 +36,12 @@ function reportPage() {
   localStorage.setItem("helpdeskName", helpdeskName);
   window.location.href = "/reportPrompt.html";
 }
+function commonPage() {
+  const helpdeskName = document.getElementById("helpdeskInput").value.trim();
+  if (!helpdeskName) {
+    showAutoAlert("Điền tên đi man.");
+    return;
+  }
+  localStorage.setItem("helpdeskName", helpdeskName);
+  window.location.href = "/commonPage.html";
+}

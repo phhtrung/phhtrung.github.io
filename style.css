@@ -137,3 +137,7 @@ textarea {
 .delete-button{
     background-color: rgb(224, 152, 140);
 }
+
+.back-button-common{
+     margin-top:50px
+}
